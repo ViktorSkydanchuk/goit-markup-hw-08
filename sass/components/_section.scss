@@ -1,4 +1,9 @@
 .typical-section {
-  padding-top: $typical-padding;
-  padding-bottom: $typical-padding;
+  padding-top: $second-typical-padding;
+  padding-bottom: $second-typical-padding;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: $typical-padding;
+    padding-bottom: $typical-padding;
+  }
 }

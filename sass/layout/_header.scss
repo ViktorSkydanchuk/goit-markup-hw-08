@@ -9,6 +9,31 @@
   align-items: center;
 }
 
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.menu-icon {
+  fill: currentColor;
+}
+
+.menu-icon-open{
+ 
+}
+
+.menu-icon-close{
+}
+
 .nav {
   display: flex;
   align-items: center;
