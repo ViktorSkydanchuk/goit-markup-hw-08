@@ -1,27 +1,29 @@
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: $title-color;
 
-  margin-bottom: $typical-margin;
+  margin-bottom: $second-typical-margin;
 }
+
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
 
-  margin-right: -30px;
+  margin: -15px;
 }
 
 .clients__item {
-  flex-basis: calc(100% / 6 - 30px);
+  width: calc((100% - 4 * 15px) / 2);
   height: 92px;
 
-  margin-right: $second-typical-margin;
+  margin: 15px;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 
 .clients__link {
