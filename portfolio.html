@@ -21,40 +21,6 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <a href="./index.html" class="logo logo--header link" lang="en"
-            >Web<span class="logo logo--dark">Studio</span></a
-          >
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link link">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__accent link">Портфолио</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link link">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__mail link"
-              ><svg class="contacts__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__tel link"
-              ><svg class="contacts__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
     <main>
       <section class="portfolio typical-section">
         <div class="container">
@@ -80,7 +46,14 @@
             <li class="portfolio-gallery__item">
               <a href="#" class="portfolio-gallery__link link">
                 <div class="portfolio-gallery__thumb">
-                  <img src="./images/portfolio-1.jpg" alt="Ноутбук" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/project-1-desktop.jpg 370w, ./images/project-1-tablet.jpg 354w, ./images/project-1-mobile.jpg 450w, 
+                  ./images/project-1-desktop@2.jpg 740w, ./images/project-1-tablet@2.jpg 708w, ./images/project-1-mobile@2.jpg 900w>"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img src="./images/project-1-desktop.jpg" alt="Ноутбук" />
+                  </picture>
                   <p class="portfolio-gallery__content">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -96,12 +69,14 @@
             <li class="portfolio-gallery__item">
               <a href="#" class="portfolio-gallery__link link"
                 ><div class="portfolio-gallery__thumb">
-                  <img
-                    src="./images/portfolio-2.jpg"
-                    alt="Постер баскетбол"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/project-2-desktop.jpg 370w, ./images/project-2-tablet.jpg 354w, ./images/project-2-mobile.jpg 450w, 
+                  ./images/project-2-desktop@2.jpg 740w, ./images/project-2-tablet@2.jpg 708w, ./images/project-2-mobile@2.jpg 900w>"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img src="./images/project-2-desktop.jpg" alt="Постер баскетбол" />
+                  </picture>
                   <p class="portfolio-gallery__content">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -119,12 +94,14 @@
             <li class="portfolio-gallery__item">
               <a href="#" class="portfolio-gallery__link link"
                 ><div class="portfolio-gallery__thumb">
-                  <img
-                    src="./images/portfolio-3.jpg"
-                    alt="Постер ресторан"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/project-3-desktop.jpg 370w, ./images/project-3-tablet.jpg 354w, ./images/project-3-mobile.jpg 450w, 
+                  ./images/project-3-desktop@2.jpg 740w, ./images/project-3-tablet@2.jpg 708w, ./images/project-3-mobile@2.jpg 900w>"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img src="./images/project-3-desktop.jpg" alt="Постер ресторан" />
+                  </picture>
                   <p class="portfolio-gallery__content">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -140,7 +117,14 @@
             <li class="portfolio-gallery__item">
               <a href="#" class="portfolio-gallery__link link"
                 ><div class="portfolio-gallery__thumb">
-                  <img src="./images/portfolio-4.jpg" alt="Наушники" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/project-4-desktop.jpg 370w, ./images/project-4-tablet.jpg 354w, ./images/project-4-mobile.jpg 450w, 
+                  ./images/project-4-desktop@2.jpg 740w, ./images/project-4-tablet@2.jpg 708w, ./images/project-4-mobile@2.jpg 900w>"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img src="./images/project-4-desktop.jpg" alt="Наушники" />
+                  </picture>
                   <p class="portfolio-gallery__content">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -156,7 +140,14 @@
             <li class="portfolio-gallery__item">
               <a href="#" class="portfolio-gallery__link link"
                 ><div class="portfolio-gallery__thumb">
-                  <img src="./images/portfolio-5.jpg" alt="Коробки" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/project-5-desktop.jpg 370w, ./images/project-5-tablet.jpg 354w, ./images/project-5-mobile.jpg 450w, 
+                  ./images/project-5-desktop@2.jpg 740w, ./images/project-5-tablet@2.jpg 708w, ./images/project-5-mobile@2.jpg 900w>"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img src="./images/project-5-desktop.jpg" alt="Коробки" />
+                  </picture>
                   <p class="portfolio-gallery__content">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -172,7 +163,14 @@
             <li class="portfolio-gallery__item">
               <a href="#" class="portfolio-gallery__link link"
                 ><div class="portfolio-gallery__thumb">
-                  <img src="./images/portfolio-6.jpg" alt="Вдохновение" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/project-6-desktop.jpg 370w, ./images/project-6-tablet.jpg 354w, ./images/project-6-mobile.jpg 450w, 
+                  ./images/project-6-desktop@2.jpg 740w, ./images/project-6-tablet@2.jpg 708w, ./images/project-6-mobile@2.jpg 900w>"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img src="./images/project-6-desktop.jpg" alt="Вдохновение" />
+                  </picture>
                   <p class="portfolio-gallery__content">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -188,7 +186,14 @@
             <li class="portfolio-gallery__item">
               <a href="#" class="portfolio-gallery__link link"
                 ><div class="portfolio-gallery__thumb">
-                  <img src="./images/portfolio-7.jpg" alt="Журнал" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/project-7-desktop.jpg 370w, ./images/project-7-tablet.jpg 354w, ./images/project-7-mobile.jpg 450w, 
+                  ./images/project-7-desktop@2.jpg 740w, ./images/project-7-tablet@2.jpg 708w, ./images/project-7-mobile@2.jpg 900w>"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img src="./images/project-7-desktop.jpg" alt="Журнал" />
+                  </picture>
                   <p class="portfolio-gallery__content">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -206,7 +211,14 @@
             <li class="portfolio-gallery__item">
               <a href="#" class="portfolio-gallery__link link"
                 ><div class="portfolio-gallery__thumb">
-                  <img src="./images/portfolio-8.jpg" alt="Этикетка" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/project-8-desktop.jpg 370w, ./images/project-8-tablet.jpg 354w, ./images/project-8-mobile.jpg 450w, 
+                  ./images/project-8-desktop@2.jpg 740w, ./images/project-8-tablet@2.jpg 708w, ./images/project-8-mobile@2.jpg 900w>"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img src="./images/project-8-desktop.jpg" alt="Этикетка" />
+                  </picture>
                   <p class="portfolio-gallery__content">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -222,12 +234,14 @@
             <li class="portfolio-gallery__item">
               <a href="#" class="portfolio-gallery__link link"
                 ><div class="portfolio-gallery__thumb">
-                  <img
-                    src="./images/portfolio-9.jpg"
-                    alt="Постер Бизнес"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/project-9-desktop.jpg 370w, ./images/project-9-tablet.jpg 354w, ./images/project-9-mobile.jpg 450w, 
+                  ./images/project-9-desktop@2.jpg 740w, ./images/project-9-tablet@2.jpg 708w, ./images/project-9-mobile@2.jpg 900w>"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img src="./images/project-9-desktop.jpg" alt="Постер Бизнес" />
+                  </picture>
                   <p class="portfolio-gallery__content">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -245,87 +259,5 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="address">
-          <a href="./index.html" class="logo logo--footer link" lang="en"
-            >Web<span class="logo logo--light">Studio</span></a
-          >
-          <address>
-            <ul class="address__list list">
-              <li class="address__item">
-                <a
-                  href="https://goo.gl/maps/JhfwHKGLVPpdM8U38"
-                  class="address__link link"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__mail link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__tel link">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="social-footer">
-          <p class="social-footer__text">Присоединяйтесь</p>
-          <ul class="social list">
-            <li class="social__item">
-              <a href="#" class="social__link social__link--footer link">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--footer link">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--footer link">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--footer link">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="subscription">
-          <p class="subscription__text">Подпишитесь на рассылку</p>
-          <form class="subscription__form">
-            <label class="subscription__label">
-              <input
-                type="email"
-                name="email"
-                class="subscription__input"
-                placeholder="E-mail"
-                required
-            /></label>
-            <button type="submit" class="button subscription__button">
-              Подписаться
-              <svg class="subscription__icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-subscription"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

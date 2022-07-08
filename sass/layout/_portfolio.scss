@@ -1,13 +1,26 @@
 .portfolio-navigation {
   display: flex;
-  justify-content: center;
-  margin-bottom: $typical-margin;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and(min-width: 768px) {
+    justify-content: center;
+    margin-bottom: $second-typical-margin;
+  }
 }
 
 .portfolio-navigation__item:not(:last-child) {
   margin-right: 8px;
-}
 
+  @media screen and(max-width:767px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+}
 .portfolio-navigation__button {
   font-family: inherit;
   font-weight: 500;
@@ -38,6 +51,7 @@
   flex-wrap: wrap;
   margin-left: -30px;
 }
+
 .portfolio-gallery__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: $second-typical-margin;

@@ -8,6 +8,10 @@
   text-align: center;
   margin-bottom: $second-typical-margin;
 
+  @media screen and(min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: $typical-margin;
+  }
   // font-weight: 700;
   // font-size: 36px;
   // line-height: 1.17;
@@ -39,6 +43,11 @@
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
   }
+
+  @media screen and (min-width: 1200px) {
+    margin: 15px;
+    width: calc((100% - 8 * 15px) / 4);
+  }
   // &:not(:last-child) {
   //   margin-right: $second-typical-margin;
   // }
@@ -47,6 +56,10 @@
 .team__box {
   padding-top: 30px;
   padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__text {
@@ -59,6 +72,7 @@
 }
 
 .team__text--bottom {
+  font-weight: 400;
   color: $text-color;
   margin-bottom: 16px;
 }
