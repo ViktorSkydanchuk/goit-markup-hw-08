@@ -1,10 +1,14 @@
-.menu-button-open {
-  display: inline-flex;
-  margin: 0;
+.menu-button-open,
+.menu-button-close {
+  display: block;
+
+  margin-left: auto;
   padding: 0;
   border: none;
   cursor: pointer;
   background-color: transparent;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -12,26 +16,110 @@
   }
 }
 
-.menu-button-close {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
+.menu-button-open {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
+}
+
+.menu-button-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .menu-icon {
   fill: currentColor;
 }
 
-.menu-icon-open {
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+
+  background-color: $main-title-color;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 48px 40px;
 }
 
-.menu-icon-close {
+.mob-menu__nav {
+  margin-bottom: 80px;
+}
+
+.mob-menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $title-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.link__active {
+  color: $accent-color;
+}
+
+.mob-menu__contacts {
+  margin-bottom: 64px;
+}
+
+.mob-menu__contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-menu__phone-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+.mob-menu__mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: $text-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.mob_menu__socials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mob-menu__socials-item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-menu__socials-link {
+  color: $accent-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
